@@ -6,7 +6,7 @@ user engagement (likes) for vintage women’s t-shirts. Engagement was modeled
 as both a regression problem (predicting likes) and a classification problem
 (predicting high vs low engagement).
 
-(> If the notebook does not render properly on GitHub, it can be viewed locally by downloading the repository and opening the notebook in Jupyter.)
+> If the notebook does not render properly on GitHub, it can be viewed locally by downloading the repository and opening the notebook in Jupyter.
 
 ## Data
 - Publicly available Depop listing data
