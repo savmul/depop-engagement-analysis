@@ -53,7 +53,10 @@ likelihood.
 - Matplotlib
 - Jupyter Notebook
 
-> If the notebook does not render properly on GitHub, download the 
-repository
-> and open the notebook locally in Jupyter.
+## View the Analysis
+GitHub may not reliably render `.ipynb` notebooks.
+
+- HTML report (recommended): `reports/01_eda_engagement.html`
+- Notebook source: `notebooks/01_eda_engagement.ipynb`
+
 
