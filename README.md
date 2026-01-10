@@ -1,5 +1,9 @@
 # Depop Listing Engagement Analysis
 
+## View the Project
+- GitHub-rendered report: `reports/01_eda_engagement.md`
+- Notebook source (may not render on GitHub): `notebooks/01_eda_engagement.ipynb`
+
 ## Project Overview
 This project analyzes public Depop listings to understand what factors 
 drive
