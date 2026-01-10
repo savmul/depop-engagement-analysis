@@ -1,23 +1,20 @@
 # Depop Listing Engagement Analysis
 
 ## Project Overview
-This project analyzes public Depop listings to understand what factors drive
-user engagement (likes) for vintage women’s t-shirts. Engagement was modeled
-as both a regression problem (predicting likes) and a classification problem
+This project analyzes public Depop listings to understand what factors 
+drive
+user engagement (likes) for vintage women’s t-shirts. Engagement was 
+modeled
+as both a regression problem (predicting likes) and a classification 
+problem
 (predicting high vs low engagement).
-
-## 📓 Notebook
-
-- Exploratory Data Analysis: `notebooks/01_eda_engagement.ipynb`
-- If GitHub does not render the notebook, view it here:
-  https://nbviewer.org/github/savmul/depop-engagement-analysis/blob/main/notebooks/01_eda_engagement.ipynb
-
 
 ## Data
 - Publicly available Depop listing data
 - Features include price, brand, condition, and days since posting
 - Engagement measured using number of likes
-- Listings labeled as high or low engagement using the median likes threshold
+- Listings labeled as high or low engagement using the median likes 
+threshold
 
 ## Methods
 - Exploratory data analysis (EDA)
@@ -30,8 +27,10 @@ as both a regression problem (predicting likes) and a classification problem
 ## Results
 
 ### Regression
-The regression model predicts listing engagement (likes) with a mean absolute
-error (MAE) of approximately 23 likes. Given the long-tailed and noisy nature
+The regression model predicts listing engagement (likes) with a mean 
+absolute
+error (MAE) of approximately 23 likes. Given the long-tailed and noisy 
+nature
 of marketplace engagement data, this provides a reasonable baseline rather
 than precise prediction.
 
@@ -42,18 +41,19 @@ signal for predicting engagement.
 
 ### Feature Importance
 Brand recognition and item condition were the strongest predictors of
-engagement. Listings associated with recognizable brands consistently showed
-higher engagement, while higher prices generally reduced engagement likelihood.
+engagement. Listings associated with recognizable brands consistently 
+showed
+higher engagement, while higher prices generally reduced engagement 
+likelihood.
 
 ## Tools Used
 - Python
 - pandas, NumPy
 - scikit-learn
-- Matplotlib, Seaborn
+- Matplotlib
 - Jupyter Notebook
 
-## Next Steps
-- Explore non-linear models
-- Incorporate text or image features from listings
-- Expand dataset size for improved generalization
+> If the notebook does not render properly on GitHub, download the 
+repository
+> and open the notebook locally in Jupyter.
 

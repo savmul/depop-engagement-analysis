@@ -1,0 +1,10 @@
+# Jupyter junk
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# ignore scratch notebooks
+Untitled*.ipynb
+*checkpoint*.ipynb
