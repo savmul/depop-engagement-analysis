@@ -58,9 +58,14 @@ likelihood.
 - Jupyter Notebook
 
 ## View the Analysis
-GitHub may not reliably render `.ipynb` notebooks.
 
-- HTML report (recommended): `reports/01_eda_engagement.html`
-- Notebook source: `notebooks/01_eda_engagement.ipynb`
+GitHub may not reliably render `.ipynb` notebooks. Use one of the options below:
+
+- **HTML report (recommended)**: `reports/01_eda_engagement.html`
+- **Interactive notebook (nbviewer)**:  
+  https://nbviewer.org/github/savmul/depop-engagement-analysis/blob/main/notebooks/01_eda_engagement.ipynb
+- **Notebook source (GitHub)**: `notebooks/01_eda_engagement.ipynb`
+
+
 
 
