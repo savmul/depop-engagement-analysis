@@ -1,69 +1,103 @@
-# Depop Listing Engagement Analysis
+Depop Listing Engagement Analysis
+📌 Project Overview
 
-## View the Project
-- GitHub-rendered report: `reports/01_eda_engagement.md`
-- Notebook source (may not render on GitHub): `notebooks/01_eda_engagement.ipynb`
+User engagement is a key driver of visibility and sales in marketplace platforms.
+This project analyzes public Depop listings to understand which listing attributes are most strongly associated with higher engagement (measured by likes) for vintage women’s t-shirts.
 
-## Project Overview
-This project analyzes public Depop listings to understand what factors 
-drive
-user engagement (likes) for vintage women’s t-shirts. Engagement was 
-modeled
-as both a regression problem (predicting likes) and a classification 
-problem
-(predicting high vs low engagement).
+The goal is not perfect prediction, but to identify actionable signals that could inform:
 
-## Data
-- Publicly available Depop listing data
-- Features include price, brand, condition, and days since posting
-- Engagement measured using number of likes
-- Listings labeled as high or low engagement using the median likes 
-threshold
+seller listing strategies
 
-## Methods
-- Exploratory data analysis (EDA)
-- Data cleaning and preprocessing
-- Feature engineering
-- Linear regression to predict engagement
-- Logistic regression to classify high vs low engagement
-- Feature importance analysis using model coefficients
+marketplace ranking logic
 
-## Results
+experimentation hypotheses
 
-### Regression
-The regression model predicts listing engagement (likes) with a mean 
-absolute
-error (MAE) of approximately 23 likes. Given the long-tailed and noisy 
-nature
-of marketplace engagement data, this provides a reasonable baseline rather
-than precise prediction.
+❓ Key Question
 
-### Classification
-The classifier achieved approximately 63% accuracy, outperforming a naive
-baseline (~60%). This indicates that listing metadata contains meaningful
-signal for predicting engagement.
+What listing characteristics are most associated with high engagement, and how much signal exists in basic listing metadata?
 
-### Feature Importance
-Brand recognition and item condition were the strongest predictors of
-engagement. Listings associated with recognizable brands consistently 
-showed
-higher engagement, while higher prices generally reduced engagement 
-likelihood.
+📊 Data
 
-## Tools Used
-- Python
-- pandas, NumPy
-- scikit-learn
-- Matplotlib
-- Jupyter Notebook
+Publicly available Depop listing data
 
-## View the Analysis
+Features include:
 
-GitHub may not reliably render `.ipynb` notebooks. Use one of the options below:
+price
 
-- **HTML report (recommended)**: `reports/01_eda_engagement.html`
-- **Interactive notebook (nbviewer)**:  
-  https://nbviewer.org/github/savmul/depop-engagement-analysis/blob/main/notebooks/01_eda_engagement.ipynb
+brand
+
+condition
+
+time since posting
+
+Engagement measured as number of likes
+
+Listings labeled as high vs low engagement using the median likes threshold
+
+🧠 Approach
+
+Exploratory data analysis (EDA) to understand distributions and relationships
+
+Data cleaning and feature engineering
+
+Regression modeling to estimate engagement magnitude
+
+Classification modeling to identify high-engagement listings
+
+Feature importance analysis using model coefficients
+
+🔍 Key Findings
+
+Brand recognition is the strongest predictor of engagement
+
+Item condition is consistently associated with higher likes
+
+Higher prices generally reduce engagement likelihood
+
+Even simple listing metadata contains meaningful signal, despite the noisy and long-tailed nature of marketplace engagement data
+
+📈 Model Performance (Context, Not the Point)
+
+Regression MAE ≈ 23 likes, serving as a reasonable baseline given engagement volatility
+
+Classification accuracy ≈ 63%, outperforming a naive baseline (~60%)
+
+These results suggest the models are useful for directional insight, not precise prediction.
+
+💡 How This Could Be Used
+
+Help sellers optimize listings for visibility
+
+Inform marketplace experiments around ranking or recommendations
+
+Generate hypotheses for A/B testing (e.g., brand weighting, price sensitivity)
+
+🔜 Next Steps
+
+If extended further, this analysis could incorporate:
+
+image-based features
+
+seller history
+
+time-of-day or recency effects
+
+experimental validation via A/B testing
+
+🛠️ Tools
+
+Python (pandas, NumPy, scikit-learn)
+Matplotlib
+Jupyter Notebook
+
+📂 View the Analysis
+
+HTML report (recommended): reports/01_eda_engagement.html
+
+Notebook source: notebooks/01_eda_engagement.ipynb
+
+nbviewer:
+https://nbviewer.org/github/savmul/depop-engagement-analysis/blob/main/notebooks/01_eda_engagement.ipynb
 - **Notebook source (GitHub)**: `notebooks/01_eda_engagement.ipynb`
 
 
