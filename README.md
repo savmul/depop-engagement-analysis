@@ -1,10 +1,12 @@
 Depop Listing Engagement Analysis
+Understanding what drives engagement helps sellers improve visibility and helps marketplaces design better ranking and recommendation systems.
+
 📌 Project Overview
 
 User engagement is a key driver of visibility and sales in marketplace platforms.
 This project analyzes public Depop listings to understand which listing attributes are most strongly associated with higher engagement (measured by likes) for vintage women’s t-shirts.
 
-The goal is not perfect prediction, but to identify actionable signals that could inform:
+The goal is not perfect prediction, but to identify directional, actionable signals that could inform:
 
 seller listing strategies
 
@@ -54,7 +56,7 @@ Item condition is consistently associated with higher likes
 
 Higher prices generally reduce engagement likelihood
 
-Even simple listing metadata contains meaningful signal, despite the noisy and long-tailed nature of marketplace engagement data
+Even simple listing metadata contains meaningful signal, despite the noisy and long-tailed nature of marketplace engagement data, making it useful for directional decision-making.
 
 📈 Model Performance (Context, Not the Point)
 
@@ -92,13 +94,10 @@ Jupyter Notebook
 
 📂 View the Analysis
 
-HTML report (recommended): reports/01_eda_engagement.html
-
-Notebook source: notebooks/01_eda_engagement.ipynb
-
-nbviewer:
-https://nbviewer.org/github/savmul/depop-engagement-analysis/blob/main/notebooks/01_eda_engagement.ipynb
-- **Notebook source (GitHub)**: `notebooks/01_eda_engagement.ipynb`
+Primary report (GitHub-rendered): reports/01_eda_engagement.md  
+Notebook source (reference): notebooks/01_eda_engagement.ipynb  
+Notebook (nbviewer): https://nbviewer.org/github/savmul/depop-engagement-analysis/blob/main/notebooks/01_eda_engagement.ipynb  
+HTML export (optional): reports/01_eda_engagement.html
 
 
 
