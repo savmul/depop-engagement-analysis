@@ -1,3 +1,4 @@
+**bold text**
 Depop Listing Engagement Analysis
 
 Understanding what drives engagement helps sellers improve visibility and helps marketplaces design better ranking and recommendation systems.
