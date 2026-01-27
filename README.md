@@ -1,9 +1,8 @@
-**bold text**
-Depop Listing Engagement Analysis
+**Depop Listing Engagement Analysis**
 
 Understanding what drives engagement helps sellers improve visibility and helps marketplaces design better ranking and recommendation systems.
 
-📌 Project Overview
+📌 **Project Overview**
 
 User engagement is a key driver of visibility and sales in marketplace platforms.
 This project analyzes public Depop listings to understand which listing attributes are most strongly associated with higher engagement (measured by likes) for vintage women’s t-shirts.
@@ -16,11 +15,11 @@ marketplace ranking logic
 
 experimentation hypotheses
 
-❓ Key Question
+❓ **Key Question**
 
 What listing characteristics are most associated with high engagement, and how much signal exists in basic listing metadata?
 
-📊 Data
+📊 **Data**
 
 Publicly available Depop listing data
 
@@ -38,7 +37,7 @@ Engagement measured as number of likes
 
 Listings labeled as high vs low engagement using the median likes threshold
 
-🧠 Approach
+🧠 **Approach**
 
 Exploratory data analysis (EDA) to understand distributions and relationships
 
@@ -50,7 +49,7 @@ Classification modeling to identify high-engagement listings
 
 Feature importance analysis using model coefficients
 
-🔍 Key Findings
+🔍 **Key Findings**
 
 Brand recognition is the strongest predictor of engagement
 
@@ -60,7 +59,7 @@ Higher prices generally reduce engagement likelihood
 
 Even simple listing metadata contains meaningful signal, despite the noisy and long-tailed nature of marketplace engagement data, making it useful for directional decision-making.
 
-📈 Model Performance (Context, Not the Point)
+📈 **Model Performance (Context, Not the Point)**
 
 Regression MAE ≈ 23 likes, serving as a reasonable baseline given engagement volatility
 
@@ -68,7 +67,7 @@ Classification accuracy ≈ 63%, outperforming a naive baseline (~60%)
 
 These results suggest the models are useful for directional insight, not precise prediction.
 
-💡 How This Could Be Used
+💡 **How This Could Be Used**
 
 Help sellers optimize listings for visibility
 
@@ -76,7 +75,7 @@ Inform marketplace experiments around ranking or recommendations
 
 Generate hypotheses for A/B testing (e.g., brand weighting, price sensitivity)
 
-🔜 Next Steps
+🔜 **Next Steps**
 
 If extended further, this analysis could incorporate:
 
@@ -88,13 +87,13 @@ time-of-day or recency effects
 
 experimental validation via A/B testing
 
-🛠️ Tools
+🛠️ **Tools**
 
 Python (pandas, NumPy, scikit-learn)
 Matplotlib
 Jupyter Notebook
 
-📂 View the Analysis
+📂 **View the Analysis**
 
 Primary report (GitHub-rendered): reports/01_eda_engagement.md  
 Notebook source (reference): notebooks/01_eda_engagement.ipynb  
